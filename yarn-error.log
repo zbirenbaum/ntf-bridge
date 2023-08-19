@@ -1,0 +1,85 @@
+Arguments: 
+  /home/zach/.config/nvm/versions/node/v16.17.1/bin/node /home/zach/.config/nvm/versions/node/v16.17.1/bin/yarn
+
+PATH: 
+  /home/zach/.pyenv/plugins/pyenv-virtualenvwrapper/shims:/home/zach/.pyenv/libexec:/home/zach/.pyenv/plugins/python-build/bin:/home/zach/.pyenv/plugins/pyenv-virtualenvwrapper/bin:/home/zach/.config/nvm/versions/node/v16.17.1/bin:/home/zach/.pyenv/shims:/home/zach/.local/shims:/home/zach/.local/perl5/bin:/home/zach/.local/bin:/home/zach/.emacs.d/bin:/home/zach/go/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/22.2/comm_libs/mpi/bin:/home/zach/.pyenv/bin:/home/zach/.cargo/bin:/home/zach/.local/share/gem/ruby/3.0.0/bin:/home/zach/Progfiles/Android/emulator:/home/zach/Progfiles/matlab/R2021b/bin/:/bin:/usr/local/cuda/bin:/usr/local/bin:/usr/local/sbin:/home/zach/Progfiles/river/bin/:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/home/zach/.foundry/bin:/home/zach/.foundry/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/zach/Dev/work/blockus/nft-lock/package.json: Unexpected token } in JSON at position 549
+      at JSON.parse (<anonymous>)
+      at /home/zach/.config/nvm/versions/node/v16.17.1/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/home/zach/.config/nvm/versions/node/v16.17.1/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/zach/.config/nvm/versions/node/v16.17.1/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "nft-lock",
+    "version": "0.2.0",
+    "description": "nft locker",
+    "scripts": {
+      "clean": "hardhat clean",
+      "compile": "hardhat compile",
+      "generate:typechain": "rm -rf typechain && hardhat typechain",
+      "report-gas:summary": "REPORT_GAS=true hardhat test",
+      "report-gas:benchmark": "hardhat test benchmark/*.ts",
+      "size-contracts": "hardhat size-contracts | sed -r 's/[[:cntrl:]]\\[[0-9]{1,3}m//g' > reports/contract_sizes.txt",
+      "test": "hardhat compile && hardhat test"
+    },
+    "repository": {
+      "type": "git",
+    },
+    "homepage": "https://github.com/celer-network/sgn-v2-contracts#readme",
+    "devDependencies": {
+      "@nomicfoundation/hardhat-ethers": "^3.0.4",
+      "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+      "@nomiclabs/hardhat-etherscan": "^3.0.3",
+      "@nomiclabs/hardhat-waffle": "^2.0.3",
+      "@openzeppelin/contracts": "4.5.0",
+      "@typechain/ethers-v5": "^9.0.0",
+      "@typechain/hardhat": "^4.0.0",
+      "@types/chai": "^4.3.0",
+      "@types/mocha": "^9.1.0",
+      "@types/node": "^17.0.21",
+      "@types/sinon-chai": "^3.2.8",
+      "@typescript-eslint/eslint-plugin": "^5.13.0",
+      "@typescript-eslint/parser": "^5.13.0",
+      "chai": "^4.3.6",
+      "eslint": "^8.10.0",
+      "eslint-config-prettier": "^8.4.0",
+      "eslint-plugin-import": "^2.25.4",
+      "ethereum-waffle": "^3.4.0",
+      "ethers": "^5.5.4",
+      "fs-extra": "^10.0.1",
+      "hardhat": "^2.9.0",
+      "hardhat-contract-sizer": "^2.5.0",
+      "hardhat-deploy": "^0.11.4",
+      "hardhat-gas-reporter": "^1.0.8",
+      "husky": "^7.0.4",
+      "prettier": "^2.5.1",
+      "prettier-plugin-solidity": "^1.0.0-beta.19",
+      "protobufjs": "^6.11.2",
+      "solc": "0.8.9",
+      "ts-node": "^10.6.0",
+      "typechain": "^7.0.0",
+      "typescript": "^4.6.2"
+    },
+    "dependencies": {
+      "dotenv": "^16.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
